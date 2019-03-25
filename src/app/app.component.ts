@@ -59,6 +59,7 @@ export class AppComponent  implements OnInit {
         },
         ticks: {
           beginAtZero: true,
+          padding: 20,
           min: -40,
           max: 60,
           stepSize: 20,
@@ -84,16 +85,39 @@ export class AppComponent  implements OnInit {
   public barChartData = [{
     label: 'Corp',
     data: [-2, 45, -12, 44, -8, -24],
-    backgroundColor:'red', 
   }, {
     label: 'Other',
     data: [-5, 25, -12, 5, -8, -27],
-    backgroundColor:'ggreen',
   }, {
     label: 'PSHIP',
     data: [-7, 15, -3, 5, -8, -30],
-    backgroundColor:'blue',
   }];
+  public lineChartColors: Array<any> = [
+        { // grey
+            backgroundColor: '#7cb5ec',
+            borderColor: '#7cb5ec',
+            pointBackgroundColor: '#7cb5ec',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+        },
+        { // dark grey
+            backgroundColor: '#414046',
+            borderColor: '#414046',
+            pointBackgroundColor: '#414046',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(77,83,96,1)'
+        },
+        { // dark grey
+            backgroundColor: '#8eec83',
+            borderColor: '#8eec83',
+            pointBackgroundColor: '#8eec83',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(77,83,96,1)'
+        }
+    ];
   ngOnInit() {
   }
 }
