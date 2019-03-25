@@ -54,6 +54,10 @@ export class AppComponent  implements OnInit {
     maintainAspectRatio: false,
     scales: {
       yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Values'
+        },
         gridLines: {
           drawBorder: false,
         },
