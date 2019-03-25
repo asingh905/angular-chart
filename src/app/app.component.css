@@ -1,0 +1,17 @@
+.app-container{
+    text-align: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    background: white;
+}
+.chart-container {
+    width: 700px;
+    height:500px;
+    margin: auto;
+    resize: both;
+    overflow: auto;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
