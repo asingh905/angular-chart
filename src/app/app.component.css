@@ -1,4 +1,4 @@
-.app-container{
+/* .app-container{
     text-align: center;
     width: 80%;
     height: 100vh;
@@ -13,4 +13,75 @@
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+} */
+
+div#app-icon {
+    display: flex;
+    float: left;
+    height: 55px;
+    padding: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+/* Make Header Sticky */
+#header_container { 
+  background:#fafafa; 
+  height:65px; 
+  left:0; 
+  position:fixed; 
+  width:100%; 
+  top:0; 
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+#header{ 
+    display: flex;
+    float: left;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #f75a2d;
+    margin-left: 20px;
+}
+.launch-btn {
+    float: right;
+    margin: 18px;
+    background: transparent;
+    border: 1px solid #f75a2d;
+    color: #f75a2d;
+    padding: 5px;
+}
+button.launch-btn:hover {
+    background-color: #f75a2d;
+    color: white;
+}
+
+#container { 
+    margin:0 auto; 
+    overflow:auto; 
+    padding: 80px 0px 0px 0px;
+}
+
+#footer_container { 
+    background: #272c30;
+    color: white;
+    width: 100%;
+}
+.licence { 
+    margin:0 auto;
+    font-size: 10px;
+    padding: 5px 0px;
+}
+
+.confidential-notice{
+     background-color: #313840;
+     padding: 10px;
+}
+.confidential-notice p {
+    margin: 0px 0px 4px;
+}
+.conf-header:before{
+    color: red;
+    content: "TSD ";
+    font-size: 18px;
+}
+p.conf-content {
+    font-size: 12px;
 }

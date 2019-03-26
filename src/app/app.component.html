@@ -1,4 +1,4 @@
-<div style="text-align:center" class="app-container">
+<!-- <div style="text-align:center" class="app-container">
   <h1>
     Welcome to {{ title }}
   </h1>
@@ -14,4 +14,39 @@
       </canvas>
     </div>
   </div>
+</div> -->
+<div id="header_container">
+    <div id="app-icon">
+        <img src="https://www.pinclipart.com/picdir/big/62-621264_pin-network-logo-cake-on-pinterest-dog-bed.png" width="100px" height="50px" />
+    </div>
+    <div id="header">
+        PWC Dashboard
+    </div>
+    <button class="launch-btn">
+    Launch GTW
+    </button>
+</div>
+<div id="container">
+    <div id="content">
+        <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [colors]="lineChartColors"
+              [chartType]="barChartType">
+      </canvas>
+          
+
+    </div>
+</div>
+<div id="footer_container">
+    <div class= "confidential-notice">
+      <p class="conf-header">(PWC Dashboard)</p>
+      <p class="">CONFIDENTIAL NOTICE:</p>
+      <p class="conf-content">Lorem ipsum dolor sit amet, consecteture adipiscing elit. Phaseiilus pulivinar. Lorem ipsum dolor sit amet, consecteture adipiscing elit. Phaseiilus pulivinar. Lorem ipsum dolor sit amet, consecteture adipiscing elit. Phaseiilus pulivinar.</p>
+    </div>
+    <div class="licence">
+        &copy; 2019 company network and/or one or more of its member firms, each of which is a seperate legal entity.
+    </div>
 </div>
